@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 560" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Self-evolving agent system architecture">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#475569"/>
+    </marker>
+    <style>
+      .box{rx:10;stroke-width:2;}
+      .lbl{font-size:15px;font-weight:600;fill:#0f172a;}
+      .sub{font-size:12px;fill:#334155;}
+      .title{font-size:22px;font-weight:700;fill:#0f172a;}
+      .edge{stroke:#475569;stroke-width:2;fill:none;}
+    </style>
+  </defs>
+  <rect width="860" height="560" fill="#f8fafc"/>
+  <text x="430" y="34" text-anchor="middle" class="title">Self-Evolving Agent: System Architecture</text>
+
+  <!-- Environment -->
+  <rect x="40" y="70" width="200" height="120" rx="10" fill="#e0f2fe" stroke="#0284c7"/>
+  <text x="140" y="100" text-anchor="middle" class="lbl">Environment (POMDP)</text>
+  <text x="140" y="124" text-anchor="middle" class="sub">Tasks, observations,</text>
+  <text x="140" y="142" text-anchor="middle" class="sub">rewards, tools, users</text>
+  <text x="140" y="166" text-anchor="middle" class="sub">stochastic &amp; partial</text>
+
+  <!-- Agent core -->
+  <rect x="300" y="70" width="280" height="300" rx="12" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="440" y="98" text-anchor="middle" class="lbl">Agent Core (&#928;)</text>
+
+  <rect x="320" y="115" width="110" height="60" rx="8" fill="#fff" stroke="#7c3aed"/>
+  <text x="375" y="142" text-anchor="middle" class="sub" font-weight="600">LLM Backbone</text>
+  <text x="375" y="160" text-anchor="middle" class="sub">policy / reasoner</text>
+
+  <rect x="450" y="115" width="110" height="60" rx="8" fill="#fff" stroke="#7c3aed"/>
+  <text x="505" y="142" text-anchor="middle" class="sub" font-weight="600">Reasoner (&#968;)</text>
+  <text x="505" y="160" text-anchor="middle" class="sub">plan / act</text>
+
+  <rect x="320" y="190" width="110" height="60" rx="8" fill="#fff" stroke="#7c3aed"/>
+  <text x="375" y="217" text-anchor="middle" class="sub" font-weight="600">Memory (M)</text>
+  <text x="375" y="235" text-anchor="middle" class="sub">episodic / semantic</text>
+
+  <rect x="450" y="190" width="110" height="60" rx="8" fill="#fff" stroke="#7c3aed"/>
+  <text x="505" y="217" text-anchor="middle" class="sub" font-weight="600">Tools (T)</text>
+  <text x="505" y="235" text-anchor="middle" class="sub">code / APIs</text>
+
+  <rect x="320" y="265" width="110" height="60" rx="8" fill="#fff" stroke="#7c3aed"/>
+  <text x="375" y="292" text-anchor="middle" class="sub" font-weight="600">Verifiers (V)</text>
+  <text x="375" y="310" text-anchor="middle" class="sub">critics / tests</text>
+
+  <rect x="450" y="265" width="110" height="60" rx="8" fill="#fff" stroke="#7c3aed"/>
+  <text x="505" y="292" text-anchor="middle" class="sub" font-weight="600">Workflow (W)</text>
+  <text x="505" y="310" text-anchor="middle" class="sub">orchestration</text>
+
+  <!-- Evolution engine -->
+  <rect x="640" y="70" width="180" height="300" rx="12" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="730" y="98" text-anchor="middle" class="lbl">Evolution Engine (E)</text>
+  <rect x="660" y="115" width="140" height="46" rx="8" fill="#fff" stroke="#16a34a"/>
+  <text x="730" y="143" text-anchor="middle" class="sub" font-weight="600">Proposer / Mutator</text>
+  <rect x="660" y="171" width="140" height="46" rx="8" fill="#fff" stroke="#16a34a"/>
+  <text x="730" y="199" text-anchor="middle" class="sub" font-weight="600">Evaluator (fitness)</text>
+  <rect x="660" y="227" width="140" height="46" rx="8" fill="#fff" stroke="#16a34a"/>
+  <text x="730" y="255" text-anchor="middle" class="sub" font-weight="600">Selector / Commit</text>
+  <rect x="660" y="283" width="140" height="70" rx="8" fill="#fff" stroke="#16a34a"/>
+  <text x="730" y="311" text-anchor="middle" class="sub" font-weight="600">Archive / Population</text>
+  <text x="730" y="331" text-anchor="middle" class="sub">variants + lineage</text>
+
+  <!-- Safety layer -->
+  <rect x="40" y="410" width="780" height="110" rx="12" fill="#fef9c3" stroke="#ca8a04"/>
+  <text x="430" y="438" text-anchor="middle" class="lbl">Safety &amp; Governance Layer (cross-cutting)</text>
+  <text x="170" y="470" text-anchor="middle" class="sub">Sandbox / isolation</text>
+  <text x="350" y="470" text-anchor="middle" class="sub">Audit log + versioning</text>
+  <text x="530" y="470" text-anchor="middle" class="sub">Static analysis + critics</text>
+  <text x="710" y="470" text-anchor="middle" class="sub">Human-in-the-loop gates</text>
+  <text x="430" y="500" text-anchor="middle" class="sub">Rollback / kill-switch &#8226; multi-objective fitness (success, efficiency, safety, novelty)</text>
+
+  <!-- Edges -->
+  <path class="edge" d="M240,118 L300,118" marker-end="url(#arrow)"/>
+  <text x="270" y="108" text-anchor="middle" class="sub">act</text>
+  <path class="edge" d="M300,150 L240,150" marker-end="url(#arrow)"/>
+  <text x="270" y="172" text-anchor="middle" class="sub">observe / reward</text>
+  <path class="edge" d="M580,170 L640,150" marker-end="url(#arrow)"/>
+  <text x="612" y="150" text-anchor="middle" class="sub">feedback</text>
+  <path class="edge" d="M640,300 L580,300" marker-end="url(#arrow)"/>
+  <text x="612" y="290" text-anchor="middle" class="sub">commit</text>
+  <path class="edge" d="M440,370 L440,410" marker-end="url(#arrow)"/>
+  <path class="edge" d="M730,370 L730,410" marker-end="url(#arrow)"/>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Closed-loop self-evolution data flow">
+  <defs>
+    <marker id="a2" markerWidth="12" markerHeight="12" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,3.5 L0,7 Z" fill="#7c3aed"/>
+    </marker>
+    <style>
+      .t{font-size:22px;font-weight:700;fill:#0f172a;}
+      .l{font-size:15px;font-weight:600;fill:#0f172a;}
+      .s{font-size:12px;fill:#334155;}
+      .e{stroke:#7c3aed;stroke-width:2.5;fill:none;}
+    </style>
+  </defs>
+  <rect width="760" height="560" fill="#f8fafc"/>
+  <text x="380" y="36" text-anchor="middle" class="t">The Closed-Loop Evolution Cycle</text>
+
+  <!-- 1 Perceive -->
+  <rect x="300" y="70" width="160" height="78" rx="40" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="380" y="104" text-anchor="middle" class="l">1. Perceive &amp; Reason</text>
+  <text x="380" y="126" text-anchor="middle" class="s">observe, plan, recall memory</text>
+
+  <!-- 2 Act -->
+  <rect x="540" y="200" width="170" height="78" rx="14" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+  <text x="625" y="234" text-anchor="middle" class="l">2. Act &amp; Execute</text>
+  <text x="625" y="256" text-anchor="middle" class="s">tools, code, env interaction</text>
+
+  <!-- 3 Evaluate -->
+  <rect x="490" y="370" width="180" height="78" rx="14" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+  <text x="580" y="404" text-anchor="middle" class="l">3. Evaluate &amp; Reflect</text>
+  <text x="580" y="426" text-anchor="middle" class="s">reward + textual critique</text>
+
+  <!-- 4 Evolve -->
+  <rect x="90" y="370" width="180" height="78" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="180" y="400" text-anchor="middle" class="l">4. Evolve</text>
+  <text x="180" y="420" text-anchor="middle" class="s">propose &#8594; validate</text>
+  <text x="180" y="436" text-anchor="middle" class="s">&#8594; commit if net positive</text>
+
+  <!-- 5 Update -->
+  <rect x="50" y="200" width="170" height="78" rx="14" fill="#fae8ff" stroke="#a21caf" stroke-width="2"/>
+  <text x="135" y="234" text-anchor="middle" class="l">5. Updated &#928;&#8242;</text>
+  <text x="135" y="256" text-anchor="middle" class="s">improved components</text>
+
+  <!-- loop edges -->
+  <path class="e" d="M460,118 C560,130 610,160 625,200" marker-end="url(#a2)"/>
+  <path class="e" d="M625,278 C630,320 615,345 600,370" marker-end="url(#a2)"/>
+  <path class="e" d="M490,420 L270,420" marker-end="url(#a2)"/>
+  <path class="e" d="M150,370 C120,330 125,305 135,278" marker-end="url(#a2)"/>
+  <path class="e" d="M170,200 C220,150 270,128 300,120" marker-end="url(#a2)"/>
+
+  <!-- center note -->
+  <rect x="300" y="240" width="170" height="96" rx="10" fill="#fff" stroke="#94a3b8" stroke-dasharray="4 3"/>
+  <text x="385" y="268" text-anchor="middle" class="s" font-weight="600">Feedback sources</text>
+  <text x="385" y="290" text-anchor="middle" class="s">scalar reward (r)</text>
+  <text x="385" y="308" text-anchor="middle" class="s">textual critique</text>
+  <text x="385" y="326" text-anchor="middle" class="s">tests / benchmarks</text>
+
+  <text x="380" y="500" text-anchor="middle" class="s">Inner loop = intra-task (in-context). Outer loop = inter-task / lifelong / population.</text>
+</svg>

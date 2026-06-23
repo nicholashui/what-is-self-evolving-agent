@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 520" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="What When How taxonomy of self-evolving agents">
+  <defs>
+    <style>
+      .t{font-size:22px;font-weight:700;fill:#0f172a;}
+      .h{font-size:17px;font-weight:700;fill:#fff;}
+      .l{font-size:13px;fill:#1e293b;}
+      .s{font-size:12px;fill:#334155;}
+    </style>
+  </defs>
+  <rect width="880" height="520" fill="#f8fafc"/>
+  <text x="440" y="38" text-anchor="middle" class="t">Core Taxonomy: What &#215; When &#215; How</text>
+
+  <!-- WHAT -->
+  <rect x="30" y="70" width="260" height="420" rx="12" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+  <rect x="30" y="70" width="260" height="46" rx="12" fill="#7c3aed"/>
+  <text x="160" y="100" text-anchor="middle" class="h">WHAT evolves</text>
+  <text x="50" y="146" class="l" font-weight="600">&#8226; Model / Policy</text>
+  <text x="64" y="166" class="s">prompts, ICL, weights (LoRA)</text>
+  <text x="50" y="196" class="l" font-weight="600">&#8226; Memory</text>
+  <text x="64" y="216" class="s">episodic, semantic, world model</text>
+  <text x="50" y="246" class="l" font-weight="600">&#8226; Tools</text>
+  <text x="64" y="266" class="s">discovery, generation, selection</text>
+  <text x="50" y="296" class="l" font-weight="600">&#8226; Architecture / Workflow</text>
+  <text x="64" y="316" class="s">reasoning strategy, orchestration</text>
+  <text x="50" y="346" class="l" font-weight="600">&#8226; Source Code</text>
+  <text x="64" y="366" class="s">self-rewriting (DGM frontier)</text>
+  <text x="50" y="396" class="l" font-weight="600">&#8226; Meta-evolution</text>
+  <text x="64" y="416" class="s">improving the improver</text>
+
+  <!-- WHEN -->
+  <rect x="310" y="70" width="260" height="420" rx="12" fill="#fff" stroke="#0284c7" stroke-width="2"/>
+  <rect x="310" y="70" width="260" height="46" rx="12" fill="#0284c7"/>
+  <text x="440" y="100" text-anchor="middle" class="h">WHEN it evolves</text>
+  <text x="330" y="150" class="l" font-weight="600">&#8226; Intra-test-time</text>
+  <text x="344" y="170" class="s">within one task (Reflexion)</text>
+  <text x="330" y="206" class="l" font-weight="600">&#8226; Inter-test-time</text>
+  <text x="344" y="226" class="s">across tasks/sessions (Voyager)</text>
+  <text x="330" y="262" class="l" font-weight="600">&#8226; Lifelong / continual</text>
+  <text x="344" y="282" class="s">persistent, retention-aware</text>
+  <text x="330" y="318" class="l" font-weight="600">&#8226; Population / generational</text>
+  <text x="344" y="338" class="s">archive over generations</text>
+  <text x="330" y="384" class="l" font-weight="600">&#8226; Hybrid lifecycle</text>
+  <text x="344" y="404" class="s">fast inner + slow outer loops</text>
+
+  <!-- HOW -->
+  <rect x="590" y="70" width="260" height="420" rx="12" fill="#fff" stroke="#16a34a" stroke-width="2"/>
+  <rect x="590" y="70" width="260" height="46" rx="12" fill="#16a34a"/>
+  <text x="720" y="100" text-anchor="middle" class="h">HOW it evolves</text>
+  <text x="610" y="150" class="l" font-weight="600">&#8226; Reward-based</text>
+  <text x="624" y="170" class="s">scalar RL + verbal/textual</text>
+  <text x="610" y="206" class="l" font-weight="600">&#8226; Imitation / bootstrap</text>
+  <text x="624" y="226" class="s">self-gen data + filtering (STaR)</text>
+  <text x="610" y="262" class="l" font-weight="600">&#8226; Population-based</text>
+  <text x="624" y="282" class="s">mutation, selection, archive</text>
+  <text x="610" y="318" class="l" font-weight="600">&#8226; Self-play / QD</text>
+  <text x="624" y="338" class="s">novelty, MAP-Elites, co-evo</text>
+  <text x="610" y="384" class="l" font-weight="600">&#8226; Hybrid / meta</text>
+  <text x="624" y="404" class="s">blend all three paradigms</text>
+</svg>

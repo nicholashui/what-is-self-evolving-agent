@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 520" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Multi-agent co-evolution component interaction">
+  <defs>
+    <marker id="a4" markerWidth="11" markerHeight="11" refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3.5 L0,7 Z" fill="#475569"/>
+    </marker>
+    <style>
+      .t{font-size:21px;font-weight:700;fill:#0f172a;}
+      .l{font-size:14px;font-weight:700;fill:#0f172a;}
+      .s{font-size:11.5px;fill:#334155;}
+      .e{stroke:#475569;stroke-width:2;fill:none;}
+    </style>
+  </defs>
+  <rect width="820" height="520" fill="#f8fafc"/>
+  <text x="410" y="36" text-anchor="middle" class="t">Multi-Agent Co-Evolving Team</text>
+
+  <!-- Planner -->
+  <circle cx="410" cy="120" r="58" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="410" y="116" text-anchor="middle" class="l">Planner</text>
+  <text x="410" y="136" text-anchor="middle" class="s">decompose tasks</text>
+
+  <!-- Coder -->
+  <circle cx="200" cy="250" r="58" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+  <text x="200" y="246" text-anchor="middle" class="l">Coder</text>
+  <text x="200" y="266" text-anchor="middle" class="s">implement / edit</text>
+
+  <!-- Critic -->
+  <circle cx="620" cy="250" r="58" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="620" y="246" text-anchor="middle" class="l">Critic</text>
+  <text x="620" y="266" text-anchor="middle" class="s">verify / score</text>
+
+  <!-- Toolsmith -->
+  <circle cx="300" cy="410" r="58" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="300" y="406" text-anchor="middle" class="l">Toolsmith</text>
+  <text x="300" y="426" text-anchor="middle" class="s">build new tools</text>
+
+  <!-- Archivist -->
+  <circle cx="520" cy="410" r="58" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+  <text x="520" y="406" text-anchor="middle" class="l">Archivist</text>
+  <text x="520" y="426" text-anchor="middle" class="s">shared memory</text>
+
+  <!-- edges -->
+  <path class="e" d="M370,165 L235,210" marker-end="url(#a4)"/>
+  <path class="e" d="M450,165 L585,210" marker-end="url(#a4)"/>
+  <path class="e" d="M255,245 L562,245" marker-end="url(#a4)"/>
+  <text x="410" y="236" text-anchor="middle" class="s">submit work / receive critique</text>
+  <path class="e" d="M245,300 L290,355" marker-end="url(#a4)"/>
+  <path class="e" d="M590,300 L535,355" marker-end="url(#a4)"/>
+  <path class="e" d="M358,410 L462,410" marker-end="url(#a4)"/>
+  <text x="410" y="400" text-anchor="middle" class="s">register tools + lessons</text>
+  <path class="e" d="M495,360 C470,250 440,190 425,178" marker-end="url(#a4)"/>
+  <text x="500" y="300" text-anchor="middle" class="s">experience feeds back</text>
+
+  <text x="410" y="486" text-anchor="middle" class="s">Co-evolution: Critic fitness drives Coder/Toolsmith; protocols, roles &amp; shared memory evolve together.</text>
+</svg>

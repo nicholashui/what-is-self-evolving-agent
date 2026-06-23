@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Population-based Darwin Godel Machine evolutionary workflow">
+  <defs>
+    <marker id="a3" markerWidth="11" markerHeight="11" refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3.5 L0,7 Z" fill="#16a34a"/>
+    </marker>
+    <marker id="a3r" markerWidth="11" markerHeight="11" refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3.5 L0,7 Z" fill="#dc2626"/>
+    </marker>
+    <style>
+      .t{font-size:21px;font-weight:700;fill:#0f172a;}
+      .l{font-size:14px;font-weight:600;fill:#0f172a;}
+      .s{font-size:11.5px;fill:#334155;}
+      .e{stroke:#16a34a;stroke-width:2.2;fill:none;}
+      .er{stroke:#dc2626;stroke-width:2.2;fill:none;stroke-dasharray:5 4;}
+    </style>
+  </defs>
+  <rect width="860" height="520" fill="#f8fafc"/>
+  <text x="430" y="36" text-anchor="middle" class="t">Population-Based Self-Evolution (DGM-style)</text>
+
+  <!-- Archive -->
+  <rect x="40" y="80" width="180" height="180" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="130" y="108" text-anchor="middle" class="l">Archive / Population</text>
+  <rect x="60" y="124" width="140" height="28" rx="6" fill="#fff" stroke="#2563eb"/>
+  <text x="130" y="143" text-anchor="middle" class="s">variant A (0.50)</text>
+  <rect x="60" y="158" width="140" height="28" rx="6" fill="#fff" stroke="#2563eb"/>
+  <text x="130" y="177" text-anchor="middle" class="s">variant B (0.42)</text>
+  <rect x="60" y="192" width="140" height="28" rx="6" fill="#fff" stroke="#2563eb"/>
+  <text x="130" y="211" text-anchor="middle" class="s">variant C (0.38)</text>
+  <text x="130" y="240" text-anchor="middle" class="s">diverse + high-performing</text>
+
+  <!-- Sample -->
+  <rect x="290" y="100" width="150" height="60" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+  <text x="365" y="128" text-anchor="middle" class="l">1. Sample parent(s)</text>
+  <text x="365" y="148" text-anchor="middle" class="s">tournament / QD / novelty</text>
+
+  <!-- Mutate -->
+  <rect x="510" y="100" width="150" height="60" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+  <text x="585" y="124" text-anchor="middle" class="l">2. Mutate</text>
+  <text x="585" y="142" text-anchor="middle" class="s">LLM proposes code diff</text>
+  <text x="585" y="156" text-anchor="middle" class="s">/ prompt / new tool</text>
+
+  <!-- Sandbox apply -->
+  <rect x="510" y="220" width="150" height="70" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+  <text x="585" y="246" text-anchor="middle" class="l">3. Apply in sandbox</text>
+  <text x="585" y="265" text-anchor="middle" class="s">git apply, isolated,</text>
+  <text x="585" y="280" text-anchor="middle" class="s">no network, timeout</text>
+
+  <!-- Evaluate -->
+  <rect x="510" y="330" width="150" height="70" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+  <text x="585" y="356" text-anchor="middle" class="l">4. Evaluate</text>
+  <text x="585" y="375" text-anchor="middle" class="s">SWE-bench / Polyglot</text>
+  <text x="585" y="390" text-anchor="middle" class="s">multi-objective fitness</text>
+
+  <!-- Decide -->
+  <rect x="290" y="330" width="150" height="70" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="365" y="356" text-anchor="middle" class="l">5. Select / Commit</text>
+  <text x="365" y="375" text-anchor="middle" class="s">better or novel?</text>
+  <text x="365" y="390" text-anchor="middle" class="s">add to archive + log lineage</text>
+
+  <!-- edges -->
+  <path class="e" d="M220,150 L290,130" marker-end="url(#a3)"/>
+  <path class="e" d="M440,130 L510,130" marker-end="url(#a3)"/>
+  <path class="e" d="M585,160 L585,220" marker-end="url(#a3)"/>
+  <path class="e" d="M585,290 L585,330" marker-end="url(#a3)"/>
+  <path class="e" d="M510,365 L440,365" marker-end="url(#a3)"/>
+  <path class="e" d="M290,360 C200,360 130,320 130,262" marker-end="url(#a3)"/>
+  <text x="180" y="345" class="s">accept &#8594;</text>
+  <path class="er" d="M340,330 C320,300 320,200 350,162" marker-end="url(#a3r)"/>
+  <text x="300" y="250" class="s" fill="#dc2626">reject</text>
+
+  <text x="430" y="448" text-anchor="middle" class="s">Diversity + selection avoid local optima &#8226; emergent meta-skills (better editing, peer review)</text>
+  <text x="430" y="470" text-anchor="middle" class="s">DGM result: SWE-bench 20% &#8594; 50%, Polyglot 14.2% &#8594; 30.7% (arXiv:2505.22954)</text>
+</svg>
