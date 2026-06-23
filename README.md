@@ -6,14 +6,16 @@ The content is synthesized from 2025–2026 arXiv research, including the [Surve
 
 ## Contents
 
+Everything lives under the [`book/`](book/) folder.
+
 ### Books
 
 | File | Language | Description |
 |------|----------|-------------|
-| [`BOOK_EN.md`](BOOK_EN.md) | English | The full instructional book — 14 chapters + 5 appendices, first-principles theory, reproducible Python code, a complete DGM-style tutorial, evaluation, safety, and applications. |
-| [`BOOK_ZH-TW.md`](BOOK_ZH-TW.md) | 繁體中文 | Faithful Traditional Chinese translation of the full book. |
+| [`book/BOOK_EN.md`](book/BOOK_EN.md) | English | The full instructional book — 14 chapters + 5 appendices, first-principles theory, reproducible Python code, a complete DGM-style tutorial, evaluation, safety, and applications. |
+| [`book/BOOK_EN_hk.md`](book/BOOK_EN_hk.md) | 繁體中文 | Faithful Traditional Chinese translation of the full book. |
 
-### Diagrams ([`diagrams/`](diagrams/))
+### Diagrams ([`book/diagrams/`](book/diagrams/))
 
 Optimized SVG architectural diagrams, referenced inline from the books:
 
@@ -23,19 +25,25 @@ Optimized SVG architectural diagrams, referenced inline from the books:
 - `04-dgm-population-loop.svg` — population-based (Darwin Gödel Machine) workflow
 - `05-multi-agent-coevolution.svg` — multi-agent component interaction
 
-### YouTube Narration Scripts ([`scripts/`](scripts/))
+### Narration Scripts
 
-A 10-episode narration series derived from the English book, in three language versions:
+Clean, spoken-word YouTube narration scripts (no headings, tags, or production cues), derived from the English book, in three language versions:
 
 | File | Language | Description |
 |------|----------|-------------|
-| [`scripts/youtube_scripts_en.md`](scripts/youtube_scripts_en.md) | English | Spoken-optimized scripts with on-screen / B-roll / pause cues. |
-| [`scripts/youtube_scripts_zh-tw.md`](scripts/youtube_scripts_zh-tw.md) | 繁體中文 | Traditional Chinese narration scripts. |
-| [`scripts/youtube_scripts_putonghua.md`](scripts/youtube_scripts_putonghua.md) | 普通话（简体） | Standard Mandarin (Putonghua) scripts in Simplified Chinese for mainland narration. |
+| [`book/BOOK_EN.script.txt`](book/BOOK_EN.script.txt) | English | Spoken narration of the full book, optimized for listening. |
+| [`book/BOOK_EN.script_hk.txt`](book/BOOK_EN.script_hk.txt) | 繁體中文 | Traditional Chinese translation of the narration. |
+| [`book/BOOK_EN.script_zh.txt`](book/BOOK_EN.script_zh.txt) | 普通话（简体） | Putonghua (Standard Mandarin) version in Simplified Chinese. |
 
-## Reading Order
+## Production Pipeline
 
-Start with [`BOOK_EN.md`](BOOK_EN.md) (or [`BOOK_ZH-TW.md`](BOOK_ZH-TW.md)). The book is self-contained and progresses from foundations → taxonomy → implementation → operations. The scripts condense the same material into a voice-over series for video production.
+The files were produced as a sequential pipeline:
+
+1. **Write** the English book → `book/BOOK_EN.md`
+2. **Translate** to Traditional Chinese → `book/BOOK_EN_hk.md`
+3. **Convert** the English book to a spoken narration script → `book/BOOK_EN.script.txt`
+4. **Translate** the script to Traditional Chinese → `book/BOOK_EN.script_hk.txt`
+5. **Convert** the Traditional Chinese script to Putonghua → `book/BOOK_EN.script_zh.txt`
 
 ## Topics Covered
 
